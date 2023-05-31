@@ -27,5 +27,8 @@ public class TestAverage {
 
         System.out.print("Score 3: ");
         scoreThree = keyboard.nextDouble();
+
+        total = scoreOne + scoreTwo + scoreThree;
+        average = total / 3;
     }
 }
