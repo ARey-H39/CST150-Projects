@@ -15,5 +15,17 @@ public class TestAverage {
         double average;
 
         Scanner keyboard = new Scanner(System.in);
+
+        System.out.print("Students Name: ");
+        studentName = keyboard.nextLine();
+
+        System.out.print("Score 1: ");
+        scoreOne = keyboard.nextDouble();
+
+        System.out.print("Score 2: ");
+        scoreTwo = keyboard.nextDouble();
+
+        System.out.print("Score 3: ");
+        scoreThree = keyboard.nextDouble();
     }
 }
