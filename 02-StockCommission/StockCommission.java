@@ -16,7 +16,9 @@ public class StockCommission {
         String input;
 
         input = JOptionPane.showInputDialog("How many shares are you buying?");
+        shares = Double.parseDouble(input);
 
         input = JOptionPane.showInputDialog("Wha is the price per share?");
+        pricePerShare = Double.parseDouble(input);
     }
 }
