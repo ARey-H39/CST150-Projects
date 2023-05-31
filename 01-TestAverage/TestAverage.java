@@ -13,5 +13,7 @@ public class TestAverage {
         double scoreThree;
         double total;
         double average;
+
+        Scanner keyboard = new Scanner(System.in);
     }
 }
