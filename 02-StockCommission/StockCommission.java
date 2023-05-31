@@ -22,5 +22,8 @@ public class StockCommission {
         pricePerShare = Double.parseDouble(input);
 
         subTotal = shares * pricePerShare;
+
+        input = JOptionPane.showInputDialog("How much will be added for commission? (percent)");
+        commission = subTotal * (Double.parseDouble(input) / 100);
     }
 }
