@@ -16,7 +16,7 @@ public class TestAverage {
 
         Scanner keyboard = new Scanner(System.in);
 
-        System.out.print("Students Name: ");
+        System.out.print("Student's Name: ");
         studentName = keyboard.nextLine();
 
         System.out.print("Score 1: ");
