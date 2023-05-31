@@ -20,5 +20,7 @@ public class StockCommission {
 
         input = JOptionPane.showInputDialog("Wha is the price per share?");
         pricePerShare = Double.parseDouble(input);
+
+        subTotal = shares * pricePerShare;
     }
 }
