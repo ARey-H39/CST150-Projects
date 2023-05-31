@@ -30,5 +30,8 @@ public class TestAverage {
 
         total = scoreOne + scoreTwo + scoreThree;
         average = total / 3;
+
+        System.out.println(studentName + " has an average score of " + average + ".");
+        System.out.println("End of Java");
     }
 }
