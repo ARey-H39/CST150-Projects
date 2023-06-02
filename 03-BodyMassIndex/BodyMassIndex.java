@@ -21,5 +21,8 @@ public class BodyMassIndex {
         // Ask for user's weight
         input = JOptionPane.showInputDialog("Enter your weight (lbs):");
         weight = Double.parseDouble(input);
+
+        // Get Body Mass Index based on information given
+        BMI = weight * 703 / (height * height);
     }
 }
