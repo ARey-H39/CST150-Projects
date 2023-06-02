@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 /**
  * 
  * @author Henry Salinas
@@ -9,5 +11,7 @@ public class BodyMassIndex {
         
         // Declare variables
         double height, weight, BMI;
+
+        String input;
     }
 }
