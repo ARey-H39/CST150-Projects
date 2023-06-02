@@ -13,5 +13,13 @@ public class BodyMassIndex {
         double height, weight, BMI;
 
         String input;
+
+        // Ask for user's height
+        input =  JOptionPane.showInputDialog("Enter your height (inches):");
+        height = Double.parseDouble(input);
+
+        // Ask for user's weight
+        input = JOptionPane.showInputDialog("Enter your weight (lbs):");
+        weight = Double.parseDouble(input);
     }
 }
