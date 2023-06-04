@@ -1,3 +1,5 @@
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 /**
@@ -7,7 +9,7 @@ import java.util.Scanner;
 
  public class FileWriteDemo {
  
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         String filename, friendName;
         int numFriends;
 
@@ -17,5 +19,12 @@ import java.util.Scanner;
         numFriends = keyboard.nextInt();
 
         keyboard.nextLine();
+
+        System.out.println("Enter the filename: ");
+        filename = keyboard.nextLine();
+
+        PrintWriter outputFile = new PrintWriter(filename);
+
+        outputFile.close();
     }
 }
