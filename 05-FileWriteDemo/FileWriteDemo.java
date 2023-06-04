@@ -28,8 +28,11 @@ import java.util.Scanner;
         for (int i = 1; i <= numFriends; i++) {
             System.out.print("Enter the name of friend number " + i + ": ");
             friendName = keyboard.nextLine();
+
+            outputFile.println(friendName);
         }
 
         outputFile.close();
+        System.out.print("Data written to: " + filename);
     }
 }
