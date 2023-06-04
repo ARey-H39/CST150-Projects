@@ -12,5 +12,10 @@ import java.util.Scanner;
         int numFriends;
 
         Scanner keyboard = new Scanner(System.in);
+
+        System.out.print("How many friends do you have?: ");
+        numFriends = keyboard.nextInt();
+
+        keyboard.nextLine();
     }
 }
