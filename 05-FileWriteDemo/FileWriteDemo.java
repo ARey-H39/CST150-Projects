@@ -25,6 +25,11 @@ import java.util.Scanner;
 
         PrintWriter outputFile = new PrintWriter(filename);
 
+        for (int i = 1; i <= numFriends; i++) {
+            System.out.print("Enter the name of friend number " + i + ": ");
+            friendName = keyboard.nextLine();
+        }
+
         outputFile.close();
     }
 }
