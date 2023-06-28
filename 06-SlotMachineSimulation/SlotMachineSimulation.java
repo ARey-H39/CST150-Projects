@@ -55,8 +55,8 @@ public class SlotMachineSimulation {
             results + "\n" + 
             "\n" + message + "\n" + 
             "\nResults:\n" +
-            "Inserted " + moneyIn + "\n" +
-            "Won " + moneyOut
+            "Inserted " + String.format("$%,.2f", moneyIn) + "\n" +
+            "Won " + String.format("$%,.2f", moneyOut)
         );
 
         System.exit(0);
