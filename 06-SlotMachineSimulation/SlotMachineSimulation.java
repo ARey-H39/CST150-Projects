@@ -62,6 +62,11 @@ public class SlotMachineSimulation {
                 "Won " + String.format("$%,.2f", moneyOut) + "\n" +
                 "\nWould you like to play again? (Yes/No)"
             );
+
+            input = input.toLowerCase();
+        
+            if (input.equals("yes")) playAgain = true;
+            else playAgain = false;
         }
         while (playAgain);
 
