@@ -51,12 +51,13 @@ public class SlotMachineSimulation {
                 message = "You have 0 matches";
         }
 
-        JOptionPane.showMessageDialog(null,
+        input = JOptionPane.showInputDialog(
             results + "\n" + 
             "\n" + message + "\n" + 
             "\nResults:\n" +
             "Inserted " + String.format("$%,.2f", moneyIn) + "\n" +
-            "Won " + String.format("$%,.2f", moneyOut)
+            "Won " + String.format("$%,.2f", moneyOut) + "\n" +
+            "\nWould you like to play again? (Yes/No)"
         );
 
         System.exit(0);
