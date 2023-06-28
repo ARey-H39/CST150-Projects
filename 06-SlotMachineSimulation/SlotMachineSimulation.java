@@ -15,50 +15,55 @@ public class SlotMachineSimulation {
         String selection1, selection2, selection3;
         String results;
 
+        boolean playAgain = false;
+
         int matches;
 
-        String message =
-            "Welcome to the Slot Machine!\n\n" +
-            "How much money would you like to insert?";
-        input = JOptionPane.showInputDialog(message);
-        moneyIn = Double.parseDouble(input);
+        do {
+            String message =
+                "Welcome to the Slot Machine!\n\n" +
+                "How much money would you like to insert?";
+            input = JOptionPane.showInputDialog(message);
+            moneyIn = Double.parseDouble(input);
 
-        selection1 = simulate();
-        selection2 = simulate();
-        selection3 = simulate();
+            selection1 = simulate();
+            selection2 = simulate();
+            selection3 = simulate();
 
-        results = selection1 + ", " + selection2 + ", " + selection3;
+            results = selection1 + ", " + selection2 + ", " + selection3;
 
-        // All 3 words match
-        if (selection1.equals(selection2) && selection1.equals(selection3)) matches = 3;
-        // Only 2 words match
-        else if (selection1.equals(selection2) ||
-                 selection2.equals(selection3) ||
-                 selection3.equals(selection1)) matches = 2;
-        // No matches found
-        else matches = 0;
+            // All 3 words match
+            if (selection1.equals(selection2) && selection1.equals(selection3)) matches = 3;
+            // Only 2 words match
+            else if (selection1.equals(selection2) ||
+                    selection2.equals(selection3) ||
+                    selection3.equals(selection1)) matches = 2;
+            // No matches found
+            else matches = 0;
 
-        moneyOut = moneyIn * matches;
+            moneyOut = moneyIn * matches;
 
-        switch (matches) {
-            case 2:
-                message = "Congrats! You have 2 matches.";
-                break;
-            case 3:
-                message = "Congrats! You have 3 matches.";
-                break;
-            default:
-                message = "You have 0 matches";
+            switch (matches) {
+                case 2:
+                    message = "Congrats! You have 2 matches.";
+                    break;
+                case 3:
+                    message = "Congrats! You have 3 matches.";
+                    break;
+                default:
+                    message = "You have 0 matches";
+            }
+
+            input = JOptionPane.showInputDialog(
+                results + "\n" + 
+                "\n" + message + "\n" + 
+                "\nResults:\n" +
+                "Inserted " + String.format("$%,.2f", moneyIn) + "\n" +
+                "Won " + String.format("$%,.2f", moneyOut) + "\n" +
+                "\nWould you like to play again? (Yes/No)"
+            );
         }
-
-        input = JOptionPane.showInputDialog(
-            results + "\n" + 
-            "\n" + message + "\n" + 
-            "\nResults:\n" +
-            "Inserted " + String.format("$%,.2f", moneyIn) + "\n" +
-            "Won " + String.format("$%,.2f", moneyOut) + "\n" +
-            "\nWould you like to play again? (Yes/No)"
-        );
+        while (playAgain);
 
         System.exit(0);
     }
