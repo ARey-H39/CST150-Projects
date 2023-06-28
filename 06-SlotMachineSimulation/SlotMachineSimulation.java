@@ -14,6 +14,8 @@ public class SlotMachineSimulation {
         String input;
         String selection1, selection2, selection3;
 
+        int matches;
+
         String message =
             "Welcome to the Slot Machine!\n\n" +
             "How much money would you like to insert?";
@@ -24,6 +26,15 @@ public class SlotMachineSimulation {
         selection2 = simulate();
         selection3 = simulate();
 
+        // All 3 words match
+        if (selection1.equals(selection2) && selection1.equals(selection3)) matches = 3;
+        // Only 2 words match
+        else if (selection1.equals(selection2) ||
+                 selection2.equals(selection3) ||
+                 selection3.equals(selection1)) matches = 2;
+        // No matches found
+        else matches = 0;
+        
         System.exit(0);
     }
 
