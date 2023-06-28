@@ -9,7 +9,7 @@ import java.util.Random;
 public class SlotMachineSimulation {
 
     public static void main(String[] args) {
-        double moneyIn;
+        double moneyIn, moneyOut;
 
         String input;
         String selection1, selection2, selection3;
@@ -34,7 +34,9 @@ public class SlotMachineSimulation {
                  selection3.equals(selection1)) matches = 2;
         // No matches found
         else matches = 0;
-        
+
+        moneyOut = moneyIn * matches;
+
         System.exit(0);
     }
 
