@@ -13,6 +13,7 @@ public class SlotMachineSimulation {
 
         String input;
         String selection1, selection2, selection3;
+        String results;
 
         int matches;
 
@@ -26,6 +27,8 @@ public class SlotMachineSimulation {
         selection2 = simulate();
         selection3 = simulate();
 
+        results = selection1 + ", " + selection2 + ", " + selection3;
+
         // All 3 words match
         if (selection1.equals(selection2) && selection1.equals(selection3)) matches = 3;
         // Only 2 words match
@@ -36,6 +39,25 @@ public class SlotMachineSimulation {
         else matches = 0;
 
         moneyOut = moneyIn * matches;
+
+        switch (matches) {
+            case 2:
+                message = "Congrats! You have 2 matches.";
+                break;
+            case 3:
+                message = "Congrats! You have 3 matches.";
+                break;
+            default:
+                message = "You have 0 matches";
+        }
+
+        JOptionPane.showMessageDialog(null,
+            results + "\n" + 
+            "\n" + message + "\n" + 
+            "\nResults:\n" +
+            "Inserted " + moneyIn + "\n" +
+            "Won " + moneyOut
+        );
 
         System.exit(0);
     }
