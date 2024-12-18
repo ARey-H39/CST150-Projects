@@ -1,0 +1,36 @@
+# IntelliJ IDEA specific files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+#v
+
+# Local history directory
+.idea/workspace.xml
+
+# Build output files
+/target/
+/build/
+/out/
+
+# Logs
+*.log
+*.err
+
+# VS Code specific files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# OS specific files
+.DS_Store
