@@ -30,4 +30,4 @@ Source codes for these projects are found in the folder "src".
       javac Main.java
       java Main
       ```
-    * _Using and IDE:_ Import the project into your preferred IDE and run the desired program.
+    * _Using an IDE:_ Import the project into your preferred IDE and run the desired program.
