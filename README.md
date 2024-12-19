@@ -15,7 +15,9 @@ Source codes for these projects are found in the folder "src".
 3. **Body Mass Index:** [[Source](src/BodyMassIndex/BodyMassIndex.java)]
 4. **Book Club Points:** [[Source](src/BookClubPoints/BookClubPoints.java)]
 5. **File Write Demo:** [[Source](src/FileWriteDemo/FileWriteDemo.java)]
-6. **Slot Machine Simulation:** [[Source](src/SlotMachineSimulation)]
+6. **Slot Machine Simulation:** [[Source](src/SlotMachineSimulation/SlotMachineSimulation.java)]
+7. **Conversion:** [[Source](src/Conversion/Conversion.java)]
+8. **Rainfall:** [[Source](src/Rainfall/Main.java)]
 
 ## How to run
 
